@@ -19,23 +19,21 @@ $(function () {
   });
 });
 
-//
-$(function () {
-  $(".hamburger").on("click", function () {
-    $(".open").toggleClass("hamColor");
-    // $(".hamColorScroll").fadeToggle();
-  });
-});
-
 // スクロールするとhumの色変更
 $(function () {
   $(window).on("scroll", function () {
     const sliderHeight = $(".page-kv").height();
     if (sliderHeight < $(this).scrollTop()) {
-      $(".hamburger").addClass("hamColorScroll");
+      $(".hamburger").addClass("hamScroll");
     } else {
-      $(".hamburger").removeClass("hamColorScroll");
+      $(".hamburger").removeClass("hamScroll");
     }
+  });
+});
+//nav開くとham色変わる
+$(function () {
+  $(".hamburger").on("click", function () {
+    $(".open").toggleClass("hamColor");
   });
 });
 

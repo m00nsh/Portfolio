@@ -328,13 +328,11 @@ h3,
 }
 
 /* 三本線を×印に */
-.open span {
-  background-color: transparent;
-}
-.hamburger.other.open.hamColor span {
-  background-color: transparent;
-}
-
+.open span,
+.hamburger.open.hamColor span,
+.hamburger.other.open.hamColor span,
+.hamburger.other.hamScroll.open.hamColor span,
+.hamburger.other.open.hamScroll span,
 .hamburger.other.open span {
   background-color: transparent;
 }
@@ -348,20 +346,27 @@ h3,
   bottom: 0;
 }
 
+.hamburger.open.hamColor span::before,
+.hamburger.open.hamColor span::after {
+  background-color: #fff;
+  transition: color 0.1s ease-out;
+}
+
 .hamburger.other span,
 .hamburger.other span::before,
 .hamburger.other span::after {
   background-color: #f5f5f5;
 }
-.hamburger.other.hamColorScroll span,
-.hamburger.other.hamColorScroll span::before,
-.hamburger.other.hamColorScroll span::after {
+
+.hamburger.other.hamScroll span,
+.hamburger.other.hamScroll span::before,
+.hamburger.other.hamScroll span::after {
   background-color: #333333;
   transition: color 0.1s ease-out;
 }
-.hamburger.other.open.hamColor.hamColorScroll span,
-.hamburger.other.open.hamColor.hamColorScroll span::before,
-.hamburger.other.open.hamColor.hamColorScroll span::after {
+
+.hamburger.other.hamScroll.open.hamColor span::before,
+.hamburger.other.hamScroll.open.hamColor span::after {
   background-color: #fff;
 }
 
