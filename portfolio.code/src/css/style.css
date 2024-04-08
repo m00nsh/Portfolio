@@ -106,7 +106,7 @@
 @media screen and (max-width: 1260px) {
   .mv-img {
     perspective: 500px;
-    height: auto;
+    height: 500px;
   }
   .mv-img figure {
     width: 400px;
@@ -505,7 +505,7 @@ h4 {
   }
   /* concept */
   .concept-ttl {
-    font-size: 15px;
+    font-size: 14px;
     margin: 5% auto 15%;
   }
 

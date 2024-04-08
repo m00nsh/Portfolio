@@ -329,10 +329,9 @@ h3,
 
 /* 三本線を×印に */
 .open span,
-.hamburger.open.hamColor span,
+.hamburger.hamColor.open span,
 .hamburger.other.open.hamColor span,
 .hamburger.other.hamScroll.open.hamColor span,
-.hamburger.other.open.hamScroll span,
 .hamburger.other.open span {
   background-color: transparent;
 }
