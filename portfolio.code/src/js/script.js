@@ -23,6 +23,7 @@ $(function () {
 $(function () {
   $(".hamburger").on("click", function () {
     $(".open").toggleClass("hamColor");
+    // $(".hamColorScroll").fadeToggle();
   });
 });
 

@@ -331,6 +331,9 @@ h3,
 .open span {
   background-color: transparent;
 }
+.hamburger.other.open.hamColor span {
+  background-color: transparent;
+}
 
 .hamburger.other.open span {
   background-color: transparent;
@@ -345,11 +348,6 @@ h3,
   bottom: 0;
 }
 
-.open.hamColor span::after,
-.open.hamColor span::before {
-  background-color: #fff;
-}
-
 .hamburger.other span,
 .hamburger.other span::before,
 .hamburger.other span::after {
@@ -360,6 +358,11 @@ h3,
 .hamburger.other.hamColorScroll span::after {
   background-color: #333333;
   transition: color 0.1s ease-out;
+}
+.hamburger.other.open.hamColor.hamColorScroll span,
+.hamburger.other.open.hamColor.hamColorScroll span::before,
+.hamburger.other.open.hamColor.hamColorScroll span::after {
+  background-color: #fff;
 }
 
 /* nav */
