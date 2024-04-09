@@ -30,50 +30,44 @@ $(function () {
     }
   });
 });
-//nav開くとham色変わる
-$(function () {
-  $(".hamburger").on("click", function () {
-    $(".open").toggleClass("hamColor");
-  });
-});
 
 // mv g-sap
-// window.addEventListener("DOMContentLoaded", () => {
-//   gsap
-//     .timeline({ repeat: -1, repeatDelay: 0.5 })
-//     .from(".rect-1", { y: -32, opacity: 0, duration: 0.5 })
-//     .from(".rect-2", { y: 32, opacity: 0, duration: 0.5 })
-//     .from(".rect-3", { y: -32, opacity: 0, duration: 0.5 })
-//     .from(".rect-4", { y: 32, opacity: 0, duration: 0.5 })
-//     .from(".rect-5", { y: -32, opacity: 0, duration: 0.5 })
-//     .to(".rect-1", { y: -32, opacity: 0, duration: 0.5 }, "+=0.5")
-//     .to(".rect-2", { y: 32, opacity: 0, duration: 0.5 }, "-=0.4") // 0.4秒開始を早める
-//     .to(".rect-3", { y: -32, opacity: 0, duration: 0.5 }, "-=0.4")
-//     .to(".rect-4", { y: 32, opacity: 0, duration: 0.5 }, "-=0.4")
-//     .to(".rect-5", { y: -32, opacity: 0, duration: 0.5 }, "-=0.4");
-// });
+window.addEventListener("DOMContentLoaded", () => {
+  gsap
+    .timeline({ repeat: -1, repeatDelay: 0.5 })
+    .from(".rect-1", { y: -32, opacity: 0, duration: 0.5 })
+    .from(".rect-2", { y: 32, opacity: 0, duration: 0.5 })
+    .from(".rect-3", { y: -32, opacity: 0, duration: 0.5 })
+    .from(".rect-4", { y: 32, opacity: 0, duration: 0.5 })
+    .from(".rect-5", { y: -32, opacity: 0, duration: 0.5 })
+    .to(".rect-1", { y: -32, opacity: 0, duration: 0.5 }, "+=0.5")
+    .to(".rect-2", { y: 32, opacity: 0, duration: 0.5 }, "-=0.4") // 0.4秒開始を早める
+    .to(".rect-3", { y: -32, opacity: 0, duration: 0.5 }, "-=0.4")
+    .to(".rect-4", { y: 32, opacity: 0, duration: 0.5 }, "-=0.4")
+    .to(".rect-5", { y: -32, opacity: 0, duration: 0.5 }, "-=0.4");
+});
 
 // mv slide
-document.addEventListener("DOMContentLoaded", () => {
-  const figure = document.querySelector(".mv-img figure");
-  let currentRotation = 0; // 現在の回転角度
-  const rotationStep = 72; // 画像1枚分の回転角度（360度 / 画像の枚数）
-  const rotationInterval = 2000; // 自動回転の間隔（ミリ秒）
+// document.addEventListener("DOMContentLoaded", () => {
+//   const figure = document.querySelector(".mv-img figure");
+//   let currentRotation = 0; // 現在の回転角度
+//   const rotationStep = 72; // 画像1枚分の回転角度（360度 / 画像の枚数）
+//   const rotationInterval = 2000; // 自動回転の間隔（ミリ秒）
 
-  // 回転処理を実行する関数
-  function rotateSlider() {
-    currentRotation += rotationStep;
-    figure.style.transform = `rotateY(${currentRotation}deg)`;
-  }
-  // 自動回転を開始する
-  let autoRotate = setInterval(rotateSlider, rotationInterval);
+//   // 回転処理を実行する関数
+//   function rotateSlider() {
+//     currentRotation += rotationStep;
+//     figure.style.transform = `rotateY(${currentRotation}deg)`;
+//   }
+//   // 自動回転を開始する
+//   let autoRotate = setInterval(rotateSlider, rotationInterval);
 
-  // 自動回転をリセットする関数
-  function resetAutoRotate() {
-    clearInterval(autoRotate);
-    autoRotate = setInterval(rotateSlider, rotationInterval);
-  }
-});
+//   // 自動回転をリセットする関数
+//   function resetAutoRotate() {
+//     clearInterval(autoRotate);
+//     autoRotate = setInterval(rotateSlider, rotationInterval);
+//   }
+// });
 
 // fade in
 

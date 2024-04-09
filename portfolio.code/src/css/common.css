@@ -339,10 +339,12 @@ h3,
 .open span::before {
   transform: rotate(-45deg);
   top: 0;
+  background-color: #fff;
 }
 .open span::after {
   transform: rotate(45deg);
   bottom: 0;
+  background-color: #fff;
 }
 
 .hamburger.open.hamColor span::before,
@@ -368,6 +370,13 @@ h3,
 .hamburger.other.hamScroll.open.hamColor span::after {
   background-color: #fff;
 }
+.open.hamburger.other.hamScroll span {
+  background-color: transparent;
+}
+.open.hamburger.other.hamScroll span::before,
+.open.hamburger.other.hamScroll span::after {
+  background-color: #fff;
+}
 
 /* nav */
 
@@ -376,7 +385,7 @@ h3,
 }
 
 .header-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #000000e6;

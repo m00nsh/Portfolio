@@ -40,7 +40,7 @@
   display: block;
 }
 /*  */
-.mv-img {
+/* .mv-img {
   padding: 20px;
   height: 500px;
   width: 100%;
@@ -56,7 +56,6 @@
 }
 .mv-img figure {
   margin: 0;
-  /* width: 600px; */
   width: 300px;
   height: auto;
   transform-style: preserve-3d;
@@ -67,25 +66,29 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0 40px;
-}
-.mv-img figure img:not(:first-of-type) {
+} */
+/* .mv-img figure img:not(:first-of-type) {
   position: absolute;
   left: 0;
   top: 0;
   transform-origin: 50% 50% -482.8427124746px;
-}
-.mv-img figure img:nth-child(2) {
-  transform: rotateY(5.085398rad) translateZ(50px); /* 画像同士の間隔を調整 */
-}
+} */
+/* .mv-img figure img:nth-child(2) {
+  transform: rotateY(5.085398rad) translateZ(50px);  */
+/* 画像同士の間隔を調整 */
+/* }
 .mv-img figure img:nth-child(3) {
-  transform: rotateY(3.770796rad) translateZ(100px); /* 画像同士の間隔をさらに調整 */
-}
+  transform: rotateY(3.770796rad) translateZ(100px);  */
+/* 画像同士の間隔をさらに調整 */
+/* }
 .mv-img figure img:nth-child(4) {
-  transform: rotateY(1.256194rad) translateZ(50px); /* 画像同士の間隔を調整 */
-}
+  transform: rotateY(1.256194rad) translateZ(50px);  */
+/* 画像同士の間隔を調整 */
+/* }
 .mv-img figure img:nth-child(5) {
-  transform: rotateY(2.541593rad) translateZ(100px); /* 画像同士の間隔をさらに調整 */
-}
+  transform: rotateY(2.541593rad) translateZ(100px);  */
+/* 画像同士の間隔をさらに調整 */
+/* }
 
 .mv-img nav {
   display: flex;
@@ -111,7 +114,7 @@
   .mv-img figure {
     width: 400px;
   }
-}
+} */
 
 /* concept */
 .concept {
@@ -270,7 +273,7 @@ h4 {
 
 .about-txt-box p {
   font-size: 16px;
-  margin-bottom: 4%;
+  margin-bottom: 20px;
 }
 
 /* service */
