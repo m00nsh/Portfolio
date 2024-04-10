@@ -7,7 +7,7 @@
   height: 100vh;
   text-align: center;
   padding-top: 8%;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
 }
 
 .main-ttl-box {
@@ -24,10 +24,11 @@
 
 /* g-sap */
 .mvBox {
-  height: 300px;
+  /* height: 300px; */
   display: grid;
   place-items: center;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -39,6 +40,12 @@
   object-fit: cover;
   display: block;
 }
+
+/* fade-out */
+/* .fade-out {
+  opacity: 0;
+} */
+
 /*  */
 /* .mv-img {
   padding: 20px;
@@ -489,23 +496,40 @@ h4 {
 }
 
 /* sp */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1180px) {
   .mv {
-    padding-top: 20%;
+    padding-top: 45%;
   }
 
+  .container {
+    gap: 10px;
+  }
+  .main-txt {
+    margin-top: 40px;
+  }
+
+  .main-txt.sp {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
   .main-ttl {
     font-size: 30px;
   }
 
-  .mvBox {
-    height: 200px;
+  .container {
+    gap: 10px;
   }
 
   .main-ttl-box,
   .main-txt {
     font-size: 24px;
   }
+
+  .main-txt {
+    margin-top: 30px;
+  }
+
   /* concept */
   .concept-ttl {
     font-size: 14px;

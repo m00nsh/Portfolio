@@ -96,6 +96,16 @@ $(window).on("load", function () {
   $(".js-box").fadeIn(1500);
 });
 
+// fade-out
+// $(function () {
+//   $(window).on("scroll", function () {
+//     const scrollFade = $(window).height();
+//     if (scrollFade > 20) {
+//       $(".mv").toggleClass("fade-out");
+//     }
+//   });
+// });
+
 // アコーディオン
 $(function () {
   //.accordion_oneの中の.accordion_headerがクリックされたら
