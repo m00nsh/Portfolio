@@ -6,8 +6,23 @@
   width: 100%;
   height: 100vh;
   text-align: center;
-  padding-top: 8%;
+  padding-top: 6%;
   /* margin-bottom: 10%; */
+}
+@media screen and (max-width: 1366px) {
+  .mv {
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mv {
+    padding-top: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mv {
+    padding-top: 45%;
+  }
 }
 
 .main-ttl-box {
@@ -497,10 +512,6 @@ h4 {
 
 /* sp */
 @media screen and (max-width: 1180px) {
-  .mv {
-    padding-top: 45%;
-  }
-
   .container {
     gap: 10px;
   }
@@ -511,7 +522,41 @@ h4 {
   .main-txt.sp {
     display: block;
   }
+  .service-item {
+    width: 30%;
+  }
 }
+@media screen and (max-width: 930px) {
+  /* about */
+  #about {
+    height: auto;
+  }
+
+  .about-wrap {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .about-ttl-box {
+    font-size: 30px;
+    width: 100%;
+    height: 260px;
+  }
+  .about-ttl-sub {
+    font-size: 20px;
+  }
+
+  .about-txt-box {
+    width: 100%;
+    padding: 10% 5%;
+  }
+
+  .about-txt-box p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-ttl {
     font-size: 30px;
@@ -584,35 +629,6 @@ h4 {
 
   .pic {
     margin: 50px 0;
-  }
-
-  /* about */
-  #about {
-    height: auto;
-  }
-
-  .about-wrap {
-    flex-direction: column;
-    align-items: normal;
-  }
-
-  .about-ttl-box {
-    font-size: 30px;
-    width: 100%;
-    height: 260px;
-  }
-  .about-ttl-sub {
-    font-size: 20px;
-  }
-
-  .about-txt-box {
-    width: 100%;
-    padding: 10% 5%;
-  }
-
-  .about-txt-box p {
-    font-size: 15px;
-    margin-bottom: 30px;
   }
 
   /* service */
