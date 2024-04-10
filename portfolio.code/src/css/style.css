@@ -204,6 +204,9 @@ h4 {
 }
 
 /* works page */
+#works a {
+  opacity: 1;
+}
 .works-content-wrap {
   max-width: 73%;
   margin: 100px auto;
