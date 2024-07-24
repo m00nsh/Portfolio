@@ -19,6 +19,10 @@ $(function () {
   });
 });
 
+$(".header-nav").on("click", function () {
+  $(".hamburger").removeClass("open");
+});
+
 // スクロールするとhumの色変更
 $(function () {
   $(window).on("scroll", function () {
