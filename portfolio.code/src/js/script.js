@@ -11,17 +11,47 @@ $(function () {
 });
 
 // hamburger
-
 $(function () {
+  // ハンバーガーアイコンをクリックしたときの処理
   $(".hamburger").on("click", function () {
     $(".hamburger").toggleClass("open");
     $(".header-nav").fadeToggle();
   });
-});
 
-$(".header-nav").on("click", function () {
-  $(".hamburger").removeClass("open");
+  // .header-nav 内のリンクをクリックしたときの処理
+  $(".header-nav a").on("click", function () {
+    $(".hamburger").removeClass("open");
+    $(".header-nav").fadeOut();
+  });
+
+  // .header-nav 自体をクリックしたときの処理
+  $(".header-nav").on("click", function (event) {
+    event.stopPropagation(); // イベントの伝播を止める
+  });
+
+  // ドキュメント全体をクリックしたときの処理
+  $(document).on("click", function () {
+    if ($(".hamburger").hasClass("open")) {
+      $(".hamburger").removeClass("open");
+      $(".header-nav").fadeOut();
+    }
+  });
+
+  // .hamburger 自体のクリックイベントがドキュメントのクリックイベントに伝播しないようにする
+  $(".hamburger").on("click", function (event) {
+    event.stopPropagation(); // イベントの伝播を止める
+  });
 });
+// $(function () {
+//   $(".hamburger").on("click", function () {
+//     $(".hamburger").toggleClass("open");
+//     $(".header-nav").fadeToggle();
+//   });
+// });
+
+// $(".header-nav").on("click", function () {
+//   $(".hamburger").removeClass("open");
+// });
 
 // スクロールするとhumの色変更
 $(function () {

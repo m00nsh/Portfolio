@@ -366,9 +366,10 @@
 }
 
 /* contact */
-.contact-txt {
+.contact-txt__contact {
   font-size: 21px;
-  /* text-align: center; */
+  text-align: center;
+  margin: 6% 0;
 }
 
 /* contact-form */
@@ -676,8 +677,8 @@
   }
 
   /* contact */
-  .contact-txt {
-    font-size: 14px;
+  .contact-txt__contact {
+    font-size: 16px;
   }
 
   /* form */
