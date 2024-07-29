@@ -178,6 +178,7 @@
 .contact-txt {
   margin: 6% auto 70px;
   letter-spacing: 2px;
+  font-size: 21px;
 }
 
 /* works */
@@ -304,7 +305,7 @@
 .about-txt-box {
   color: #fff;
   width: 50%;
-  text-wrap: wrap;
+  /* text-wrap: wrap; */
   padding: 0 4%;
 }
 
@@ -611,7 +612,7 @@
   }
 
   .contact-txt {
-    font-size: 14px;
+    font-size: 12px;
     margin: 10% auto 10%;
   }
 
